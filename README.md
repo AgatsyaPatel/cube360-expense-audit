@@ -6,7 +6,7 @@ Real corporate card data isn't public, so I generated this myself and made it in
 
 ## Data model
 
-Three tables. **Employee** has a self-referencing `ManagerID` column, so the org hierarchy lives inside the same table instead of a separate one. **DepartmentBudget** is built bottom-up from per-role expense allowances, weighted higher for travel-intensive, client-facing departments like Sales & Marketing than for back-office functions. **Transactions** holds both what the employee typed as the category and the card network's MCC code, used as an independent reference field for validating the employee-reported category.
+Three tables. **Employee** has a self-referencing ManagerID column, so the org hierarchy lives inside the same table instead of a separate one. **DepartmentBudget** is built bottom-up from per-role expense allowances, weighted higher for travel-intensive, client-facing departments like Sales & Marketing than for back-office functions. **Transactions** holds both what the employee typed as the category and the card network's MCC code, used as an independent reference field for validating the employee-reported category.
 
 ## Cleaning it up (Excel)
 
